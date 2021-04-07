@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Minesweeper</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body onload="init()">
+    <h1>Mine Sweeper</h1>
+    <div class="game-info">
+      <p><span>3</span> 	&#10084;</p>
+      <div class="time">Time played: <span class="timer"> 0 </span> sec</div>
+      <button class="smiley" onclick="init()">
+        <img src="./img/smile.png" alt="emoji" />
+      </button>
+    </div>
+
+    <div class="diff-container">
+      <button class="easy" onclick="easy()">Easy</button>
+      <button class="medium" onclick="medium()">Medium</button>
+      <button class="hard" onclick="hard()">Hard</button>
+    </div>
+
+    <table class="center">
+      <tbody class="game-board"></tbody>
+    </table>
+
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
